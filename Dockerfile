@@ -24,7 +24,7 @@ MAINTAINER Martin Weber <info@yafra.org>
 
 # Install C packages
 RUN apt-get update && \
-  apt-get install -yq monodevelop  && \
+  apt-get install -yq mono-complete monodevelop  && \
   apt-get install -yq libpq5 mysql-client-5.5 libmysql-cil-dev symlinks && \
   rm -rf /var/lib/apt/lists/*
 
